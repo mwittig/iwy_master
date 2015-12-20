@@ -235,7 +235,7 @@ IwyMaster.prototype.getState = function(callback) {
 IwyMaster.prototype.setWhite = function(callback) {
   var overwrite = function() {
     this._mode = WHITE;
-    this._color.rgb(0, 0, 0);
+    this._color.rgb(0xff, 0xff, 0xff);
   }
 
   this._send(overwrite.bind(this), callback);
